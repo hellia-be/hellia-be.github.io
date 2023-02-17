@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Itsme Smishing Attempts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Kevin Andriessens' Blog</a></h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Itsme smishing attempts</a></h2>
+										<p>There are smishing attempts (digital fraud through SMS) circulating in Belgium.</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2022-03-22">March 22, 2022</time>
+										<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<p><strong>There are smishing attempts (digital fraud through SMS) circulating in Belgium. These are faked to look like they're coming from Itsme. According to the SMS, your account has been blocked due to suspicious login attempts and it is asking for you to reactivate the account through an URL. When clicking on the link, you land on a fake website however. We advise NOT to click on the URL, because if your Itsme app is connected to your banking app, the hacker could take all your money away from it.</strong></p>
+								<p><h3>Analyzing the URL</h3></p>
+								<p>At Curios we took it a step further and analyzed this smishing attempt. Notice the URL in the SMS. We took it to <a href="https://zulu.zscaler.com">Zulu Zscaler</a> to analyze authenticity.<br>
+								With the tool, we learned a few things about the URL, but the most important one is the scope at the top which indicates the URL is malicious at 100%.</p>
+								<p>We also had colleagues who received attempts with different URLs so we analyzed these as well and noticed these were not working anymore, but attempted a redirect.<br>
+								According to <a href="https://zulu.zscaler.com">Zulu Zscaler</a> these were only benign threats. We however noticed something about the IP associated with the URL.</p>
+								<p>When using <a href="https://whois.com/whois">Whois</a> to analyze the IP, we noticed weird things. Inside the Zscaler results, it was associated with GR (Greece), but with whois we noticed it was located in RU (Russia) and linked to an Indian physical address.</p>
+								<p>This could mean that the smishing attempts were either coming from Russia as seen in whois, or that this was an exit node of either a VPN or Tor.</p>
+								<p><h3>Final Words</h3></p>
+								<p>Did you receive such an SMS? Remember Itsme will never send an email or SMS to reactivate your account. Take a screenshot of the SMS and send it to <a href="mailto://verdacht@safeonweb.be">verdacht@safeonweb.be</a>.<br>
+								Did you click on the URL? Immediately call CardStop (078 170 170) to block your cards and accounts or call your bank directly.<br>
+								If you still encounter some financial issues linked to such an activity, go to your local police department to open a case.</p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+				<section id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/_Kevin_BE_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/kevandriessens/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/kevinandriessens/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto://kevin@kelaun.be" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<p class="copyright">&copy; Kevin Andriessens. <p class="copyright" style="font-size: 8px">Design: <a href="http://html5up.net">HTML5 UP</a>.</p></p>
+				</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
