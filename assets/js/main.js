@@ -1,95 +1,161 @@
-/*
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
-(function($) {
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
 
-	var	$window = $(window),
-		$body = $('body'),
-		$menu = $('#menu'),
-		$sidebar = $('#sidebar'),
-		$main = $('#main');
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ]
-		});
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
-	// Menu.
-		$menu
-			.appendTo($body)
-			.panel({
-				delay: 500,
-				hideOnClick: true,
-				hideOnSwipe: true,
-				resetScroll: true,
-				resetForms: true,
-				side: 'right',
-				target: $body,
-				visibleClass: 'is-menu-visible'
-			});
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header')
 
-	// Search (header).
-		var $search = $('#search'),
-			$search_input = $search.find('input');
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+    for(i = 0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
 
-		$body
-			.on('click', '[href="#search"]', function(event) {
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
+})
 
-				event.preventDefault();
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
-				// Not visible?
-					if (!$search.hasClass('visible')) {
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
 
-						// Reset form.
-							$search[0].reset();
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
 
-						// Show.
-							$search.addClass('visible');
+/*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services__modal'),
+    modalBtns = document.querySelectorAll('.services__button'),
+    modalClose = document.querySelectorAll('.services__modal-close')
 
-						// Focus input.
-							$search_input.focus();
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
 
-					}
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
 
-			});
+modalClose.forEach((modalClose) => {
+    modalClose.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
 
-		$search_input
-			.on('keydown', function(event) {
+/*==================== PORTFOLIO MODAL ====================*/
+const portModalViews = document.querySelectorAll('.portfolio__modal'),
+    portModalBtns = document.querySelectorAll('.portfolio__button'),
+    portModalClose = document.querySelectorAll('.portfolio__modal-close')
 
-				if (event.keyCode == 27)
-					$search_input.blur();
+let portModal = function(portModalClick){
+    portModalViews[portModalClick].classList.add('active-modal-port')
+}
 
-			})
-			.on('blur', function() {
-				window.setTimeout(function() {
-					$search.removeClass('visible');
-				}, 100);
-			});
+portModalBtns.forEach((portModalBtn, i) => {
+    portModalBtn.addEventListener('click', () =>{
+        portModal(i)
+    })
+})
 
-	// Intro.
-		var $intro = $('#intro');
+portModalClose.forEach((portModalClose) => {
+    portModalClose.addEventListener('click', () =>{
+        portModalViews.forEach((portModalView) =>{
+            portModalView.classList.remove('active-modal-port')
+        })
+    })
+})
 
-		// Move to main on <=large, back to sidebar on >large.
-			breakpoints.on('<=large', function() {
-				$intro.prependTo($main);
-			});
+/*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    mouswheel: true,
+    keyboard: true,
+});
 
-			breakpoints.on('>large', function() {
-				$intro.prependTo($sidebar);
-			});
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
-})(jQuery);
+function scrollActive(){
+    const scrollY = window.pageYOffset
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+function scrollHeader(){
+    const nav = document.getElementById('header')
+    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+/*==================== SHOW SCROLL UP ====================*/ 
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)

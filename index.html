@@ -1,212 +1,1006 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Blog of Kevin Andriessens</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" type="text/css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="#">KEVIN ANDRIESSENS' BLOG</a></h1>
-					</header>
+        <title>Portfolio of Kevin Andriessens</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Kevin</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Blog
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon nav__icon"></i> Contact me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-				<!-- Main -->
-					<div id="main">
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://linkedin.com/in/kandriessens" title="Add me on LinkedIn" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/hellia-be" title="Check me out on GitHub" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://twitter.com/_Kevin_BE_" title="Follow me on Twitter" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+                        </div>
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/how-crowdsec-can-strengthen-your-cybersecurity-in-a-kubernetes-cluster.html">How CrowdSec Can Strengthen Your Cybersecurity in a Kubernetes Cluster</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-03-28">March 28, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>Kubernetes has revolutionized the way organizations manage and deploy their applications, but with this new level of power and flexibility comes new security challenges. Cyber criminals are constantly finding new ways to target these clusters, and organizations must take steps to protect themselves. That's where CrowdSec comes in, offering a cutting-edge solution for securing your Kubernetes cluster.</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/how-crowdsec-can-strengthen-your-cybersecurity-in-a-kubernetes-cluster.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                                </g>
+                            </svg>                            
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Kevin</h1>
+                            <h3 class="home__subtitle">Engineering secure and efficient systems with DevSecOps</h3>
+                            <p class="home__description">With a passion for both engineering and security, I specialize in DevSecOps and Linux administration. My portfolio showcases my skills in designing, building, and securing systems that are both efficient and safe.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/intelowl-project.html">IntelOwl Project</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-03-28">March 28, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>A solution to the challenges of threat intelligence context acquisition in cybersecurity.</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/intelowl-project.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Engineering Secure Systems!</span>
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">Hello, I'm Kevin Andriessens, a DevSecOps Engineer and Linux System Administrator with a passion for engineering secure and efficient systems. With years of experience in the field, I bring a wealth of knowledge in DevOps, cybersecurity, and system administration to every project. For me, engineering secure systems is about more than just creating software – it's about solving complex problems and helping businesses achieve their goals in a safe and reliable way. With a focus on collaboration and communication, I work closely with my clients to understand their unique needs and engineer solutions that exceed their expectations. In my work as a DevSecOps Engineer and Linux System Administrator, I prioritize the security and reliability of every system I engineer. By leveraging cutting-edge technologies and best practices, I help businesses build the robust, scalable systems they need to succeed in today's digital landscape.</p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">07+</span>
+                                <span class="about__info-name">Years <br> of experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">50+</span>
+                                <span class="about__info-name">Projects <br> completed</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Companies <br> worked for</span>
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <a download="assets/pdf/Alexa-Cv.pdf" href="assets/pdf/Kevin-CV.pdf" class="button button--flex" target="_blank">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/whom-do-you-trust.html">Whom do You Trust?</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-03-28">March 28, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>Understanding the importance of trust in cybersecurity.</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/whom-do-you-trust.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-repeat skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">DevSecOps Engineer</h1>
+                                    <span class="skills__subtitle">More than 7 years</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Puppet</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__puppet"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git Flow</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Foreman</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__foreman"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Airflow</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__airflow"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Jenkins</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jenkins"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Docker</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__docker"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Microsoft PowerShell</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__powershell"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Terraform</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__terraform"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-linux skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Linux System Administrator</h1>
+                                    <span class="skills__subtitle">More than 7 years</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Bash Scripting</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bash"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Jira Servicedesk</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jira"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">RHEL/CentOS/Rocky</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__rhel"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Ubuntu Server</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ubuntu"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">KVM</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__kvm"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">VMware</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__vmware"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Apache HTTP</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__apache"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-shield-check skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Security Engineer</h1>
+                                    <span class="skills__subtitle">More than 1 year</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Grafana</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__grafana"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Zabbix</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__zabbix"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Golang</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__golang"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Kali Linux</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__kali"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">LDAP</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ldap"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HAProxy</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__haproxy"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Hashicorp Vault</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__vault"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Nagios</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__nagios"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SELinux</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__selinux"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">firewalld</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__firewalld"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Prometheus</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__prometheus"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Cyberark</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cyberark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/cybersecurity-and-the-importance-of-system-call-interception-in-containers.html">Cybersecurity and the Importance of System Call Interception in Containers</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-03-28">March 28, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>In today's digital landscape, the security of applications and data is more important than ever. With the increasing use of containers for application deployment, it is critical to ensure that these containers are secure from cyber threats.</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/cybersecurity-and-the-importance-of-system-call-interception-in-containers.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section section--small">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachelor in Information Technology</h3>
+                                    <span class="qualification__subtitle">Odisee - Brussels</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2012 - 2015
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Operations and Delivery Lead</h3>
+                                    <span class="qualification__subtitle">Deloitte - Zaventem</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2015 - 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Open-source and DevOps Lead</h3>
+                                    <span class="qualification__subtitle">Inuits - Brasschaat</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2021
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">DevSecOps Engineer</h3>
+                                    <span class="qualification__subtitle">Worldline - Brussels</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Security Engineer</h3>
+                                    <span class="qualification__subtitle">Curios - Antwerp</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 5 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">DevSecOps Engineer</h3>
+                                    <span class="qualification__subtitle">Siemens Mobility - Brussels</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - Present
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/the-elisa-project.html">The ELISA Project</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-03-21">March 21, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>Enabling Linux in Cybersecurity Applications</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/the-elisa-project.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-repeat services__icon"></i>
+                            <h3 class="services__title">DevSecOps <br> Engineer</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">DevSecOps <br> Engineer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I automate security testing and vulnerability scanning of applications and infrastructure.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I monitor and analyze security logs to detect and respond to security incidents.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I automate infrastructure provisioning, configuration management, and orchestration using Puppet.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I implement monitoring and logging systems to track system performance and troubleshoot issues.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I continuously improve processes and workflows to increase efficiency and reduce downtime.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-linux services__icon"></i>
+                            <h3 class="services__title">Linux <br> System <br> Administrator</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Linux <br> System <br> Administrator</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I install, configure, and maintain Linux servers and applications.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I monitor system performance and troubleshoot issues as they arise.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I implement backup and disaster recovery solutions to ensure business continuity.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I manage user accounts, access control, and permissions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I apply security patches and updates to ensure the system is protected against known vulnerabilities.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-shield-check services__icon"></i>
+                            <h3 class="services__title">Security <br> Engineer</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Security <br> Engineer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop and implement security policies and procedures for the organization.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I conduct security audits and vulnerability assessments to identify potential risks.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I implement access control and identity management systems to protect sensitive data and resources.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I design and deploy firewalls, intrusion detection/prevention systems, and other security controls.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I investigate and respond to security incidents, including performing root cause analysis and implementing corrective actions to prevent future incidents.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="post/building-secure-ci-cd-pipelines-with-dagger-in-go-for-cybersecurity-applications.html">Building secure CI/CD pipelines with Dagger in GO for cybersecurity applications</a></h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2023-02-17">February 17, 2023</time>
-									<a href="https://www.linkedin.com/in/kandriessens/" class="author"><span class="name">Kevin Andriessens</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<p>Continuous Integration/Continuous Deployment (CI/CD) is an essential part of modern software development, especially in the realm of cybersecurity. With the ever-increasing threat of cyberattacks, it's crucial to ensure that software is delivered quickly and efficiently while also adhering to security best practices. In this blog post, we'll look at using Dagger in GO to build secure CI/CD pipelines for cybersecurity applications.</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="post/building-secure-ci-cd-pipelines-with-dagger-in-go-for-cybersecurity-applications.html" class="button large">Continue Reading</a></li>
-								</ul>
-							</footer>
-						</article>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Blog</h2>
+                <span class="section__subtitle">Most recent articles</span>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">How CrowdSec Can Strengthen Your Cybersecurity in a Kubernetes Cluster</h3>
+                                <p class="portfolio__description">Kubernetes has revolutionized the way organizations manage and deploy their applications, but with this new level of power and flexibility comes new security challenges. Cyber criminals are constantly finding new ways to target these clusters, and organizations must take steps to protect themselves. That's where CrowdSec comes in, offering a cutting-edge solution for securing your Kubernetes cluster.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">IntelOWL Project</h3>
+                                <p class="portfolio__description">A Solution to the challenges of threat intelligence context acquisition in cybersecurity.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Whom Do You Trust?</h3>
+                                <p class="portfolio__description">Understanding the importance of trust in cybersecurity.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio4.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Cybersecurity and the Importance of System Call Interception in Containers</h3>
+                                <p class="portfolio__description">In today's digital landscape, the security of applications and data is more important than ever. With the increasing use of containers for application deployment, it is critical to ensure that these containers are secure from cyber threats.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">The ELISA Project</h3>
+                                <p class="portfolio__description">Enabling Linux in Cybersecurity Applications.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Building Secure CI/CD Pipelines with Dagger in Go for Cybersecurity Applications</h3>
+                                <p class="portfolio__description">Continuous Integration/Continuous Deployment (CI/CD) is an essential part of modern software development, especially in the realm of cybersecurity. With the ever-increasing threat of cyberattacks, it's crucial to ensure that software is delivered quickly and efficiently while also adhering to security best practices. In this blog post, we'll look at using Dagger in GO to build secure CI/CD pipelines for cybersecurity applications.</p>
+                                <span class="button button--flex button--small portfolio__button">
+                                    Continue Reading
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">How CrowdSec Can Strengthen Your Cybersecurity in a Kubernetes Cluster</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                            Kubernetes has revolutionized the way organizations manage and deploy their applications, but with this new level of power and flexibility comes new security challenges. Cyber criminals are constantly finding new ways to target these clusters, and organizations must take steps to protect themselves. That's where CrowdSec comes in, offering a cutting-edge solution for securing your Kubernetes cluster.
+                            <br><br>
+                            CrowdSec is a massively collaborative intrusion prevention system (IPS) that provides a fully automated process for protecting your cluster. Its four-step approach of Acquiring, Detecting, Remediating, and Sharing information about threats is designed to keep your cluster safe from even the most sophisticated attacks.
+                            <br><br>
+                            This system can detect and remediate over 50 different types of attacks and unwanted behaviors, from malicious IP addresses to targeted attacks on your cluster. CrowdSec builds a real-time map of cybercriminals, allowing you to track and kill IP addresses of attackers in real-time. This level of protection is crucial in today's fast-paced cybersecurity landscape.
+                            <br><br>
+                            CrowdSec collects only the necessary logs, and never exports them, making it fully GDPR compliant. The system also keeps data for the minimum amount of time required, ensuring that your privacy is protected at all times. This strict data collection policy is a crucial element in ensuring the security of your cluster.
+                            <br><br>
+                            CrowdSec uses a combination of cutting-edge techniques, including honeypots, whitelists, predictive algorithms, and more, to protect your cluster. Unlike traditional security solutions, CrowdSec doesn't compete with firewalls, log storage systems, SIEM, SOAR, or IA systems. Instead, it reinforces these existing systems, providing an additional layer of protection for your cluster.
+                            <br><br>
+                            In conclusion, CrowdSec is an essential solution for organizations looking to secure their Kubernetes cluster. With its fully automated process, strict data collection policies, and real-time protection against a wide range of cyber threats, organizations can have confidence in the security of their Kubernetes cluster. So, if you're looking for a comprehensive solution for protecting your Kubernetes cluster, and reinforcing your overall cybersecurity, give CrowdSec a try today!
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">IntelOWL Project</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                                Cybersecurity is a critical concern for organizations of all sizes, and effective threat intelligence is essential for staying ahead of potential attacks. However, acquiring threat intelligence context can be a major challenge, particularly when it comes to collecting information from multiple sources. This is where the IntelOwl Project comes in.
+                                <br><br>
+								The IntelOwl Project was designed to address the challenges posed by threat intelligence context acquisition in cybersecurity. It was created with a set of requirements that aimed to provide organizations with a powerful tool for managing threat intelligence and improving their overall security posture. Some of the key requirements include: 
+                                <br><br>
+							    - Automated extraction from various threat intelligence sources<br>
+								- A user-friendly web interface for easy access to intelligence<br>
+								- Integrability with existing cybersecurity systems and tools<br>
+								- Scalability and speed to handle large amount of data and real-time analysis
+								<br><br>
+								The IntelOwl Project is open-source and available on GitHub, providing organizations with access to a powerful and flexible tool for managing threat intelligence. It uses an API to provide access to its functionalities, which are available through both a web interface and a CLI (Command Line Interface). The CLI is available for both Python and GO, making it accessible to a wide range of users.
+                                <br><br>
+								One of the primary use cases for IntelOwl in cybersecurity is the scanning and testing of potentially malicious URLs. With its automated extraction capabilities, IntelOwl can quickly analyze a large number of URLs and identify those that pose a threat to an organization. This helps organizations stay ahead of potential cyberattacks and prevent data breaches.
+                                <br><br>
+								Another use case for IntelOwl is the filtering of network traffic for malicious connections. With its ability to analyze network traffic in real-time, IntelOwl can detect, and block connections associated with malicious activity, improving the overall security of an organization's network and reducing the risk of data breaches.
+                                <br><br>
+								Finally, IntelOwl can be used to scan and analyze potential malicious files. With its advanced file analysis capabilities, IntelOwl can identify and prevent the execution of malicious files on an organization's network, reducing the risk of data breaches and protecting sensitive information.
+                                <br><br>
+								In conclusion, the IntelOwl Project is a valuable tool for organizations looking to improve their threat intelligence capabilities and strengthen their cybersecurity posture. Its automated extraction capabilities, user-friendly web interface, integrability, scalability, and speed make it an ideal solution for overcoming the challenges of threat intelligence context acquisition in cybersecurity.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">Whom Do You Trust?</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                                In the digital age, cybersecurity has become a critical issue. With the increasing number of online transactions and the amount of personal and sensitive information we share online, it's essential to ensure that our data is protected. But who can we trust to keep our information safe? This question has become even more relevant in recent years, as numerous cyberattacks have been reported, and data breaches have become a common occurrence.
+                                <br><br>
+								One reason not to trust big tech companies is that they have been involved in controversies, such as helping the government against climate activists. This raises questions about privacy and the safety of our information and highlights the importance of having control over the software we use.
+                                <br><br>
+								The solution to this problem lies in Free and Open-Source Software (FOSS). With FOSS, the source code is available for anyone to review, and we can be confident that the software does what it's supposed to do, and nothing more. However, running your own instance of FOSS may not be practical for everyone, and even if you do, you still need to trust the sysadmin who has access to all your documents.
+                                <br><br>
+								End-to-end encryption is also crucial in maintaining the security of our data. Client-side encryption is not enough, as it's less effective. End-to-end encryption ensures that the data is encrypted from the sender to the recipient, and only they can access it. FOSS tools like Cryptpad provide end-to-end encryption and allow for online collaboration while keeping the data secure.
+                                <br><br>
+								However, even with end-to-end encryption, trust is still needed, as the encrypted document is only on the server. To mitigate the risk, the client code should be distributed, but there's still the possibility that the server may delete files or become corrupt. On the other hand, the server is also protected from its users, as the admin doesn't have access to the contents of the documents.
+                                <br><br>
+								In conclusion, trust is a vital aspect of cybersecurity, and it's essential to be aware of who and what we're entrusting our information to. While FOSS and end-to-end encryption can help us to maintain the security of our data, we need to be mindful of the limitations and risks involved. Ultimately, it's up to everyone to decide whom they trust to keep their information secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">Cybersecurity and the Importance of System Call Interception in Containers</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                            In today's digital landscape, the security of applications and data is more important than ever. With the increasing use of containers for application deployment, it is critical to ensure that these containers are secure from cyber threats.
+                            <br><br>
+                            One approach to increase the security of containers is through system call interception. System call interception involves intercepting system calls made by an application and modifying them before they reach the kernel. By doing so, we can prevent malicious system calls from being executed, thereby reducing the risk of a security breach.
+                            <br><br>
+                            The initial targets for interception are key system calls that pose the greatest security risks. For example, the mknod and mknodat system calls, which are used when running docker inside an LXD container, can be intercepted to prevent unauthorized access to the host system. Similarly, the setxattr system call can be intercepted to prevent malicious actors from modifying file permissions or ownership, which could lead to data theft or unauthorized access.
+                            <br><br>
+                            Another important system call is mount, which is commonly used to mount disks. However, this system call can be unsafe, and therefore, a safer alternative, fuse2fs, is being used to ensure the security of the host system.
+                            <br><br>
+                            The sched_setscheduler system call is also critical from a cybersecurity perspective. This system call is needed for the android container, but it can also make the container unkillable if not handled correctly. By intercepting this system call, we can prevent attackers from creating unkillable containers, which could lead to a persistent breach.
+                            <br><br>
+                            Finally, the sysinfo system call is also being targeted due to the fact that some systems, such as Alpine, do not follow standards, which could result in security risks. By intercepting this system call, we can prevent malicious actors from exploiting vulnerabilities in non-standard systems.
+                            <br><br>
+                            In conclusion, system call interception is a crucial aspect of securing containers in today's cybersecurity landscape. By targeting key system calls that pose the greatest security risks, we can significantly reduce the risk of a security breach and ensure the safe deployment of applications in containers.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">The ELISA Project</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                                Cybersecurity has become an increasingly pressing issue in today's digital world, and the need for secure and reliable systems is more important than ever. Linux is a widely used and well-established operating system that offers many features that make it a strong candidate for cybersecurity applications. To further enhance the use of Linux in these applications, the ELISA project was established.
+                                <br><br>
+								ELISA provides a platform for collaboration and innovation, bringing together industry leaders, researchers, and developers to work towards a common goal of making Linux a reliable solution for cybersecurity applications. The project offers a comprehensive approach that covers all aspects of Linux used in these applications, including software elements, processes, tools, and documentation.
+                                <br><br>
+								Deliverables of the ELISA project include:
+								<br><br>
+								- Elements/Software: ELISA provides a comprehensive set of software elements that are essential for building secure Linux-based systems. This includes a Linux kernel and user space components that are optimized for cybersecurity applications.<br>
+								- Processes: ELISA defines a set of processes and procedures for the development, integration, and deployment of Linux-based systems in cybersecurity applications. These processes ensure that the software is of high quality, secure and reliable.<br>
+								- Tools: ELISA provides a suite of tools for the development and deployment of Linux-based systems in cybersecurity applications. These tools help developers to quickly and efficiently develop and deploy systems that meet security requirements.<br>
+								- Documentation: ELISA provides comprehensive documentation that covers all aspects of the project, including the software elements, processes, and tools. This documentation helps developers to understand how to use the project's components and how to integrate them into their own systems.
+								<br><br>
+								The ELISA project is structured around horizontal and vertical working groups. The horizontal working groups focus on specific areas of the project, such as security architecture, Linux features, tool investigation and code improvement, open-source engineering process, and systems.
+                                <br><br>
+								The vertical use cases working groups focus on specific application domains, such as network security, cloud security, and IoT security. These groups work to develop use cases that illustrate how Linux can be used in these domains and how the project's deliverables can be applied to these applications.
+                                <br><br>
+								In conclusion, the ELISA project is a valuable resource for anyone looking to use Linux in cybersecurity applications. With its comprehensive approach, the project provides a path forward for the use of Linux in these applications, bringing together industry leaders, researchers, and developers to work towards a common goal. Whether you are an industry professional or a researcher, the ELISA project offers a wealth of resources and opportunities for collaboration and innovation in the field of cybersecurity.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <h4 class="portfolio__modal-title">Building Secure CI/CD Pipelines with Dagger in Go for Cybersecurity Applications</h4>
+                        <i class="uil uil-times portfolio__modal-close"></i>
+                        <p class="portfolio__modal-article grid">
+                            Continuous Integration/Continuous Deployment (CI/CD) is an essential part of modern software development, especially in the realm of cybersecurity. With the ever-increasing threat of cyberattacks, it's crucial to ensure that software is delivered quickly and efficiently while also adhering to security best practices. In this blog post, we'll look at using Dagger in GO to build secure CI/CD pipelines for cybersecurity applications.
+                            <br><br>
+                            Dagger is a portable CI/CD pipeline builder that allows developers to write pipelines in their preferred language. This is especially useful in the cybersecurity field, where security teams may be using different languages and tools. By using Dagger, security teams can avoid vendor lock-in and choose the language that works best for their specific security needs.
+                            <br><br>
+                            One of the key features of Dagger is its caching capabilities. In a cybersecurity context, caching intermediate results can be used to store results from security scans and tests, which can speed up your builds and reduce the load on your CI/CD servers. This makes it ideal for use in large, complex projects, where builds can take a long time to complete, and security scans can be resource intensive.
+                            <br><br>
+                            Another important aspect of Dagger is that it works using containers. In the context of cybersecurity, containers provide a secure and isolated environment for building and deploying applications. This helps to ensure that builds are consistent and reproducible, even if you are working on different systems. Moreover, containers can also be used to deploy applications in a secure, isolated environment, reducing the risk of attacks.
+                            <br><br>
+                            Dagger can be installed and run by including dagger.io/dagger in your code. This tool provides a simple and intuitive interface for building your pipelines and running your builds. With Dagger, you can define your pipelines using YAML files, which makes it easy to get started and ensure that security scans and tests are integrated into your CI/CD pipeline.
+                            <br><br>
+                            Finally, Dagger integrates with magefile, a “makefile for GO”. Magefile allows you to build binary executables in GO, making it an ideal tool for building and deploying GO-based applications. With Dagger and magefile, you can build and deploy your GO applications with ease while ensuring that security best practices are followed.
+                            <br><br>
+                            In conclusion, Dagger is a powerful and versatile CI/CD pipeline builder that is well suited for use in GO-based projects in the cybersecurity field. With its support for multiple languages, caching capabilities, use of containers, and integration with security scans and tests, Dagger is a valuable tool for building robust and secure CI/CD pipelines for cybersecurity applications. So, if you're looking for a flexible and reliable solution for building secure CI/CD pipelines, give Dagger a try!
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-						<!-- Pagination -->
-						<!-- Placing in comment as not useful at this moment
-							<ul class="actions pagination">
-								<li><a href="" class="disabled button large previous">Previous Page</a></li>
-								<li><a href="#" class="button large next">Next Page</a></li>
-							</ul>
-						-->
-					</div>
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section section--small" id="contact">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">Contact me now to discuss your new project.</p>
+                            <a href="mailto:kevin@kelaun.be" target="_blank" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/perfil.png" alt="" class="project__img">
+                    </div>
+                </div>
+            </section>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+32 472 825 848</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Mail Me</h3>
+                                <span class="contact__subtitle">kevin@kelaun.be</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Visit Me</h3>
+                                <span class="contact__subtitle">2811 Mechelen, Belgium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="https://formsubmit.co/kevin@kelaun.be" method="POST" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" class="contact__input" name="name" id="name">
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" class="contact__input" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="project" class="contact__label">Project</label>
+                            <input type="text" class="contact__input" name="project" id="project">
+                        </div>
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea cols="0" rows="7" class="contact__input" name="message" id="message"></textarea>
+                        </div>
+                        <div>
+                            <button class="button button--flex" type="submit">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
 
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
-								<header>
-									<h2>Kevin Andriessens</h2>
-									<p>Welcome to the blog of Kevin Andriessens</p>
-								</header>
-							</section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         <div class="footer__bg">
+            <p class="footer__copy">&#169; Kevin Andriessens. All rights reserved.</p>
+         </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" title="Scroll to the top of the page" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
-						<!-- Mini Posts -->
-							<section>
-								<div class="mini-posts">
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-									<!-- Mini Post -->
-									<article class="mini-post">
-										<header>
-											<h3><a href="https://www.curios-it.eu/post/celebrating-25-years-of-open-source">Celebrating 25 Years of Open Source</a></h3>
-											<time class="published" datetime="2023-03-21">March 21, 2023</time>
-											<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-										</header>
-									</article>
-
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="https://www.linkedin.com/pulse/itsme-smishing-attempts-curios-security/">Itsme Smishing Attempts</a></h3>
-												<time class="published" datetime="2022-03-22">March 22, 2022</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-										</article>
-
-								</div>
-							</section>
-
-						<!-- About -->
-							<section class="blurb">
-								<h2>About</h2>
-								<p>Kevin Andriessens is a Security Engineer currently working for <a href="https://curios-it.eu">Curios</a>. He has always been passionated by open source technology and security in general. On this blog you will find articles related to the topics of cybersecurity, coding, technology, his learnning journey and all other things he finds relevant enough to share.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/hellia-be" class="button">Learn More</a></li>
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<section id="footer">
-								<ul class="icons">
-									<li><a href="https://twitter.com/_Kevin_BE_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/kevandriessens/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/kevinandriessens/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="mailto://kevin@kelaun.be" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								<p class="copyright">&copy; Kevin Andriessens. <p class="copyright" style="font-size: 8px">Design: <a href="http://html5up.net">HTML5 UP</a>.</p></p>
-							</section>
-					</section>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
