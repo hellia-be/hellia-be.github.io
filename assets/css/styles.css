@@ -776,6 +776,10 @@ img {
   margin-right: var(--mb-0-25);
 }
 
+.portfolio__button {
+  cursor: pointer;
+}
+
 /* Active Modal */
 .active-modal {
   opacity: 1;
