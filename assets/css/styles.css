@@ -503,7 +503,8 @@ img {
 
 .skills__git,
 .skills__rhel,
-.skills__zabbix {
+.skills__zabbix,
+.skills__linuxsec {
   width: 80%;
 }
 
@@ -539,7 +540,9 @@ img {
 }
 
 .skills__terraform,
-.skills__prometheus {
+.skills__prometheus,
+.skills__nginx,
+.skills__ELK {
   width: 50%;
 }
 
