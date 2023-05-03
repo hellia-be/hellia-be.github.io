@@ -492,7 +492,8 @@ img {
   width: 95%;
 }
 
-.skills__bash {
+.skills__bash,
+.skills__OSINT {
   width: 90%;
 }
 
@@ -510,11 +511,13 @@ img {
 
 .skills__foreman,
 .skills__python,
-.skills__ubuntu {
+.skills__ubuntu,
+.skills__IAM {
   width: 70%;
 }
 
-.skills__airflow {
+.skills__airflow,
+.skills__RBAC {
   width: 65%;
 }
 
