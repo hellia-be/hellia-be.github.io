@@ -488,50 +488,67 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__puppet {
+.skills__puppet,
+.skills__grafana {
   width: 95%;
 }
 
 .skills__bash,
-.skills__OSINT {
+.skills__osint,
+.skills__vulnrem,
+.skills__appsec,
+.skills__postgres,
+.skills__html,
+.skills__css,
+.skills__nebula {
   width: 90%;
 }
 
 .skills__jira,
-.skills__grafana {
+.skills__RBAC,
+.skills__IAM,
+.skills__sql,
+.skills__powercli {
   width: 85%;
 }
 
 .skills__git,
-.skills__rhel,
 .skills__zabbix,
-.skills__linuxsec {
+.skills__cyberark,
+.skills__vulnmgmt,
+.skills__PAM,
+.skills__virtualbox,
+.skills__kvm,
+.skills__rhel {
   width: 80%;
+}
+
+.skills__mediawiki {
+  width: 75%;
 }
 
 .skills__foreman,
 .skills__python,
-.skills__ubuntu,
-.skills__IAM {
+.skills__windows,
+.skills__ubuntu {
   width: 70%;
 }
 
 .skills__airflow,
-.skills__RBAC {
+.skills__tenable {
   width: 65%;
 }
 
 .skills__jenkins,
-.skills__docker,
-.skills__kvm,
-.skills__vmware,
-.skills__golang,
-.skills__kali,
-.skills__ldap,
 .skills__ldap,
 .skills__haproxy,
 .skills__vault,
-.skills__nagios {
+.skills__nagios,
+.skills__redmine,
+.skills__prometheus,
+.skills__javascript,
+.skills__docker,
+.skills__esxi {
   width: 60%;
 }
 
@@ -543,13 +560,21 @@ img {
 }
 
 .skills__terraform,
-.skills__prometheus,
 .skills__nginx,
-.skills__ELK {
+.skills__sonar,
+.skills__golang,
+.skills__powerauto,
+.skills__aws,
+.skills__s3 {
   width: 50%;
 }
 
-.skills__cyberark {
+.skills__sensu,
+.skills__pagerduty,
+.skills__snyk,
+.skills__harness,
+.skills__ADO,
+.skills__kubernetes {
   width: 40%;
 }
 
